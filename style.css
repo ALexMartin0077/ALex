@@ -1,0 +1,285 @@
+/* ============================= */
+/* GLOBAL STYLES */
+/* ============================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("assets/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00f0ff;
+}
+
+/* ============================= */
+/* SECTIONS */
+/* ============================= */
+.section {
+  min-height: 100vh;
+  padding: 120px 10%;
+  text-align: center;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00f0ff;
+  color: black;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #34A853;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+}
+
+.coming-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: grey;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+
+/* ============================= */
+/* CARDS */
+/* ============================= */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.featured {
+  border: 2px solid #00f0ff;
+}
+
+.upcoming {
+  border: 2px solid gold;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: gold;
+  color: black;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.project-logo {
+  width: 120px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.features li {
+  margin-bottom: 8px;
+}
+
+.dev-entry {
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: left;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-left: 3px solid #00f0ff;
+  border-radius: 8px;
+}
+
+/* ============================= */
+/* ABOUT SECTION - DEFAULT BACKGROUND WITH NEON BORDERS */
+/* ============================= */
+.about-section {
+  padding: 100px 10%;
+  color: #ffffff;
+  position: relative;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  background: transparent; /* default background */
+  padding: 50px;
+  border-radius: 25px;
+  border: 2px solid #ff00ff; /* neon border */
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2); /* subtle neon glow */
+}
+
+.about-image img {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2); /* subtle glow */
+  transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff; /* normal text */
+  text-shadow: none;
+}
+
+.about-content p {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  color: #cccccc;
+}
+
+.highlight-box {
+  background: transparent;
+  border-left: 4px solid #ff00ff; /* neon border */
+  padding: 15px 20px;
+  margin: 25px 0;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(255,0,255,0.2);
+}
+
+.skills {
+  margin: 20px 0;
+}
+
+.skills span {
+  display: inline-block;
+  background: transparent;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 2px solid #ff00ff; /* neon border */
+  color: #ffffff;
+  text-shadow: none;
+  transition: 0.3s ease;
+}
+
+.skills span:hover {
+  background: #ff00ff;
+  color: black;
+  box-shadow: 0 0 10px rgba(255,0,255,0.3);
+}
+
+.closing-line {
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 250px;
+  }
+}
